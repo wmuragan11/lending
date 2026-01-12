@@ -1,120 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Как работает — лендинг + Telegram-бот</title>
-  <meta name="description" content="Пошаговая схема: переход в Telegram → короткая квалификация → настройка → заявки. Без звонков, форм и сложных сервисов." />
-  <meta property="og:title" content="Как работает" />
-  <meta property="og:description" content="Вся воронка внутри Telegram. Понятно и быстро." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1220" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как работает — AutoBot</title>
+  <meta name="description" content="Узнайте, как за 3 дня получить работающую систему продаж в Telegram. Простой процесс без технических знаний.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#content">Перейти к содержимому</a>
 
-<header class="header">
-  <div class="container">
-    <nav class="nav" aria-label="Основная навигация">
-      <a class="brand" href="index.html">
-        <div class="logo" aria-hidden="true"></div>
-        <div><strong>Лендинг + TG-бот</strong><span>как это работает</span></div>
-      </a>
-
-      <div class="menu">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Auto<span>Bot</span></a>
+      <nav class="nav">
         <a href="how.html">Как работает</a>
+        <a href="terms.html">Условия</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <a href="https://t.me/your_bot" class="header-cta">Начать →</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Как это работает</h1>
+      <p>Всё происходит в Telegram. Просто, быстро, понятно.</p>
+    </div>
+  </section>
+
+  <!-- ШАГИ ДЕТАЛЬНО -->
+  <section>
+    <div class="container">
+      <div class="steps">
+        <div class="step">
+          <div class="step-content">
+            <h3>Переход в бот</h3>
+            <p>Нажимаете кнопку на сайте — открывается Telegram. Бот приветствует вас и объясняет, что будет дальше. Никаких сложных регистраций, email или телефона.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-content">
+            <h3>Короткий брифинг</h3>
+            <p>Бот задаёт 5-7 вопросов о вашем продукте: что продаёте, кому, какая цель. Занимает 2-3 минуты. На основе ответов формируется структура вашей воронки.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-content">
+            <h3>Создание системы</h3>
+            <p>В течение 2-3 дней мы готовим: продающий лендинг под ваш продукт, Telegram-бот с автоответами и квалификацией, инструкцию по запуску трафика.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-content">
+            <h3>Запуск и настройка</h3>
+            <p>Передаём вам готовую систему. Помогаем подключить домен, проверяем работу бота, отвечаем на вопросы. Вы готовы принимать заявки.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-content">
+            <h3>Получение заявок</h3>
+            <p>Запускаете рекламу или используете органический трафик. Бот квалифицирует клиентов, прогревает, собирает контакты. Вы работаете только с тёплыми лидами.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВАЖНО -->
+  <section>
+    <div class="container">
+      <div class="important-box">
+        <h3>💡 Важно понимать</h3>
+        <ul>
+          <li>Без долгих созвонов — всё через бот и переписку</li>
+          <li>Без сложных форм — 2 минуты на заполнение брифа</li>
+          <li>Без технических знаний — мы всё делаем за вас</li>
+          <li>Без ежемесячных платежей — платите один раз</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Всё понятно?</h2>
+        <p class="cta-text">Тогда начинайте — первый шаг займёт 30 секунд</p>
+        <a href="https://t.me/your_bot" class="btn btn-primary btn-large">
+          Перейти в Telegram →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
         <a href="terms.html">Условия</a>
         <a href="faq.html">FAQ</a>
         <a href="privacy.html">Политика</a>
       </div>
+      <p class="footer-copy">© 2025 AutoBot. Все права защищены.</p>
+    </div>
+  </footer>
 
-      <a class="btn btn--cta" data-tg href="#">Начать в Telegram</a>
-    </nav>
+  <!-- ЛИПКАЯ КНОПКА -->
+  <div class="sticky-cta">
+    <a href="https://t.me/your_bot" class="btn btn-primary">
+      Начать в Telegram →
+    </a>
   </div>
-</header>
 
-<main id="content">
-  <section class="hero">
-    <div class="container">
-      <div class="card heroCard">
-        <div class="kicker">Всё происходит в Telegram</div>
-        <h1>Простой путь: от клика до заявки — без лишних шагов</h1>
-        <p class="lead">Мы убираем “прослойки”: формы, письма, долгие уточнения и хаос в переписках.</p>
-        <div class="heroActions">
-          <a class="btn btn--cta" data-tg href="#">Начать сейчас</a>
-          <a class="btn" href="index.html">На главную</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Пошаговая схема</h2>
-      <div class="grid steps">
-        <div class="step card">
-          <h3>Переход в бот</h3>
-          <p>Один CTA на сайте. Никаких альтернатив, чтобы не снижать конверсию.</p>
-        </div>
-        <div class="step card">
-          <h3>Короткая регистрация</h3>
-          <p>Бот задаёт 3–6 вопросов и собирает контекст (ниша, цель, бюджет, сроки).</p>
-        </div>
-        <div class="step card">
-          <h3>Настройка системы</h3>
-          <p>Под ваш продукт: структура, тексты, логика фильтрации, триггеры доверия.</p>
-        </div>
-        <div class="step card">
-          <h3>Получение заявок</h3>
-          <p>Вы получаете диалоги “по делу”: человек уже понял ценность и оставил вводные.</p>
-        </div>
-      </div>
-
-      <div style="margin-top:14px">
-        <a class="btn btn--cta" data-tg href="#">Перейти в Telegram</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="callout">
-        <h3>Важно</h3>
-        <ul>
-          <li>Без звонков: всё можно сделать асинхронно.</li>
-          <li>Без форм: данные собираются внутри Telegram.</li>
-          <li>Без сложных сервисов: минимум лишних точек отказа.</li>
-        </ul>
-        <div style="margin-top:12px">
-          <a class="btn btn--cta" data-tg href="#">Начать сейчас</a>
-          <a class="btn" href="faq.html">Посмотреть FAQ</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footerGrid">
-      <div class="small">© <span id="y"></span> Лендинг + TG-бот.</div>
-      <div class="small"><a href="privacy.html">Политика</a></div>
-    </div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</footer>
-
-<div class="stickyCta" role="region" aria-label="Быстрый переход в Telegram">
-  <div class="stickyInner">
-    <a class="btn btn--cta" data-tg href="#">Начать в Telegram</a>
-    <button class="btn btn--ghost" data-sticky-close type="button" aria-label="Скрыть панель">✕</button>
-  </div>
-</div>
 </body>
 </html>
