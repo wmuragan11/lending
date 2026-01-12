@@ -1,145 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Условия и формат — лендинг + Telegram-бот</title>
-  <meta name="description" content="Форматы: фикс или процент. Что входит: разработка, запуск, поддержка. Ограничения: легальные ниши, ограниченное число проектов." />
-  <meta property="og:title" content="Условия и формат" />
-  <meta property="og:description" content="Прозрачно: что входит, сроки, ограничения. Дальше — в Telegram." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0b1220" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Условия и цены — AutoBot</title>
+  <meta name="description" content="Прозрачные условия работы. Фиксированная цена, понятные сроки, гарантия результата.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
-  <script defer src="assets/app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#content">Перейти к содержимому</a>
 
-<header class="header">
-  <div class="container">
-    <nav class="nav" aria-label="Основная навигация">
-      <a class="brand" href="index.html">
-        <div class="logo" aria-hidden="true"></div>
-        <div><strong>Лендинг + TG-бот</strong><span>условия</span></div>
-      </a>
-
-      <div class="menu">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Auto<span>Bot</span></a>
+      <nav class="nav">
         <a href="how.html">Как работает</a>
         <a href="terms.html">Условия</a>
         <a href="faq.html">FAQ</a>
+      </nav>
+      <a href="https://t.me/your_bot" class="header-cta">Начать →</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Условия работы</h1>
+      <p>Прозрачно о ценах, сроках и гарантиях</p>
+    </div>
+  </section>
+
+  <!-- ТАРИФЫ -->
+  <section>
+    <div class="container">
+      <p class="section-label">Тарифы</p>
+      <h2 class="section-title">Выберите формат</h2>
+      
+      <div class="cards">
+        <div class="pricing-card">
+          <h3 class="pricing-title">Стартовый</h3>
+          <p class="pricing-price">29 000 ₽</p>
+          <p class="pricing-desc">Идеально для экспертов и фрилансеров</p>
+          <ul class="pricing-features">
+            <li>Продающий лендинг (1 страница)</li>
+            <li>Telegram-бот с автоответами</li>
+            <li>Квалификация лидов</li>
+            <li>Базовая аналитика</li>
+            <li>Инструкция по запуску</li>
+            <li>7 дней поддержки</li>
+          </ul>
+          <a href="https://t.me/your_bot" class="btn btn-outline" style="width: 100%;">Выбрать</a>
+        </div>
+        
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Популярный</span>
+          <h3 class="pricing-title">Бизнес</h3>
+          <p class="pricing-price">59 000 ₽</p>
+          <p class="pricing-desc">Для онлайн-школ и агентств</p>
+          <ul class="pricing-features">
+            <li>Всё из «Стартового»</li>
+            <li>Многостраничный сайт (до 5 стр)</li>
+            <li>Сложные сценарии бота</li>
+            <li>Интеграция с CRM</li>
+            <li>A/B тесты</li>
+            <li>30 дней поддержки</li>
+            <li>2 итерации правок</li>
+          </ul>
+          <a href="https://t.me/your_bot" class="btn btn-primary" style="width: 100%;">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЧТО ВХОДИТ -->
+  <section>
+    <div class="container">
+      <p class="section-label">Детали</p>
+      <h2 class="section-title">Что вы получаете</h2>
+      
+      <div class="cards cards-4">
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <h3 class="card-title">Копирайтинг</h3>
+          <p class="card-text">Тексты для сайта и бота пишем мы</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3 class="card-title">Дизайн</h3>
+          <p class="card-text">Современный, под вашу нишу</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚙️</div>
+          <h3 class="card-title">Настройка</h3>
+          <p class="card-text">Подключим домен, всё проверим</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📞</div>
+          <h3 class="card-title">Поддержка</h3>
+          <p class="card-text">Отвечаем на вопросы, помогаем</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СРОКИ -->
+  <section>
+    <div class="container">
+      <p class="section-label">Сроки</p>
+      <h2 class="section-title">Когда будет готово</h2>
+      
+      <div class="steps">
+        <div class="step">
+          <div class="step-content">
+            <h3>День 1</h3>
+            <p>Брифинг, сбор информации, согласование структуры</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-content">
+            <h3>День 2-3</h3>
+            <p>Разработка лендинга и настройка бота</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-content">
+            <h3>День 4</h3>
+            <p>Тестирование, правки, запуск</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОГРАНИЧЕНИЯ -->
+  <section>
+    <div class="container">
+      <div class="important-box">
+        <h3>⚠️ Ограничения</h3>
+        <ul>
+          <li>Работаем только с легальными нишами</li>
+          <li>Не больше 5 проектов в месяц (качество важнее)</li>
+          <li>Предоплата 50% для старта работ</li>
+          <li>Правки — в рамках согласованного ТЗ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2 class="cta-title">Остались вопросы?</h2>
+        <p class="cta-text">Напишите в бот — ответим за 5 минут</p>
+        <a href="https://t.me/your_bot" class="btn btn-primary btn-large">
+          Обсудить проект →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="how.html">Как работает</a>
+        <a href="faq.html">FAQ</a>
         <a href="privacy.html">Политика</a>
       </div>
+      <p class="footer-copy">© 2025 AutoBot. Все права защищены.</p>
+    </div>
+  </footer>
 
-      <a class="btn btn--cta" data-tg href="#">Обсудить в Telegram</a>
-    </nav>
+  <!-- ЛИПКАЯ КНОПКА -->
+  <div class="sticky-cta">
+    <a href="https://t.me/your_bot" class="btn btn-primary">
+      Обсудить в Telegram →
+    </a>
   </div>
-</header>
 
-<main id="content">
-  <section class="hero">
-    <div class="container">
-      <div class="card heroCard">
-        <div class="kicker">Прозрачно и по делу</div>
-        <h1>Формат работы и условия</h1>
-        <p class="lead">Два формата: фиксированная оплата или процент с результата. Выбираем то, что честнее под вашу модель.</p>
-        <div class="heroActions">
-          <a class="btn btn--cta" data-tg href="#">Обсудить проект в Telegram</a>
-          <a class="btn" href="how.html">Сначала — как работает</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Форматы сотрудничества</h2>
-      <div class="grid">
-        <div class="item card">
-          <h3>Фиксированная оплата</h3>
-          <p>Подходит, если нужен быстрый запуск и понятный бюджет. Объём фиксируем заранее.</p>
-        </div>
-        <div class="item card">
-          <h3>Процент с продаж</h3>
-          <p>Подходит, если вы готовы играть в результат и хотите выстроить долгую систему.</p>
-        </div>
-      </div>
-      <div style="margin-top:14px">
-        <a class="btn btn--cta" data-tg href="#">Уточнить формат в Telegram</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Что входит</h2>
-      <div class="grid">
-        <div class="item card">
-          <h3>Разработка</h3>
-          <p>Структура страниц, тексты, вёрстка, связка с Telegram.</p>
-        </div>
-        <div class="item card">
-          <h3>Запуск</h3>
-          <p>Проверка на мобильных, базовая SEO-настройка, публикация статикой.</p>
-        </div>
-        <div class="item card">
-          <h3>Поддержка</h3>
-          <p>Правки по факту трафика, ответы по процессу, улучшения “без раздувания”.</p>
-        </div>
-        <div class="item card">
-          <h3>Фокус на конверсии</h3>
-          <p>Убираем лишнее, усиливаем доверие, ведём к одному действию.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Сроки и этапы</h2>
-      <div class="grid">
-        <div class="item card">
-          <h3>Срок</h3>
-          <p>Обычно 3–10 дней в зависимости от готовности материалов и согласований.</p>
-        </div>
-        <div class="item card">
-          <h3>Этапы</h3>
-          <p>Бриф → структура → тексты → вёрстка → проверка → запуск.</p>
-        </div>
-      </div>
-
-      <div class="callout" style="margin-top:12px">
-        <h3>Ограничения</h3>
-        <ul>
-          <li>Только легальные ниши.</li>
-          <li>Ограниченное число проектов одновременно (качество важнее объёма).</li>
-        </ul>
-        <div style="margin-top:12px">
-          <a class="btn btn--cta" data-tg href="#">Обсудить в Telegram</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footerGrid">
-      <div class="small">© <span id="y"></span> Лендинг + TG-бот.</div>
-      <div class="small"><a href="privacy.html">Политика</a></div>
-    </div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</footer>
-
-<div class="stickyCta" role="region" aria-label="Быстрый переход в Telegram">
-  <div class="stickyInner">
-    <a class="btn btn--cta" data-tg href="#">Обсудить в Telegram</a>
-    <button class="btn btn--ghost" data-sticky-close type="button" aria-label="Скрыть панель">✕</button>
-  </div>
-</div>
 </body>
 </html>
