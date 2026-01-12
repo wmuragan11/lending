@@ -371,11 +371,10 @@ h1 {
 }
 
 .footer {
-  padding: 26px 0 90px; /* место под sticky CTA */
-  color: var(--muted);
-  border-top: 1px solid var(--stroke);
-  margin-top: 10px;
+  .footer {
+  padding: 26px 0;
 }
+
 
 .footerGrid {
   display: grid;
@@ -486,4 +485,5 @@ details p {
     display: none;
   }
 }
+
 
