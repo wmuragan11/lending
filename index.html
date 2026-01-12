@@ -1,177 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Бот + Лендинг под ключ — 50 000 ₽</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Лендинг + Telegram-бот под заявки — запуск без созвонов</title>
+  <meta name="description" content="Продающий mobile-first сайт и Telegram-бот, который принимает заявки, фильтрует нецелевых и экономит часы переписки. Один CTA — переход в Telegram." />
+  <meta property="og:title" content="Лендинг + Telegram-бот под заявки" />
+  <meta property="og:description" content="Быстрый запуск. Вся воронка внутри Telegram. Минимум ручной работы." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
+<a class="skip" href="#content">Перейти к содержимому</a>
 
-  <!-- Верхнее прилипающее меню -->
-  <header>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">Бот + Лендинг</div>
-        <div class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="how.html">Как это работает</a>
-          <a href="terms.html">Условия</a>
-          <a href="faq.html">FAQ</a>
-          <a href="privacy.html">Политика</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Изображение героя -->
+<header class="header">
   <div class="container">
-    <img src="img/hero.jpg" alt="Автоматизация продаж через Telegram и лендинг" class="hero-img">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <strong>Лендинг + TG-бот</strong>
+          <span>одна цель — заявка в Telegram</span>
+        </div>
+      </a>
+
+      <div class="menu" role="navigation">
+        <a href="how.html">Как работает</a>
+        <a href="terms.html">Условия</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Политика</a>
+      </div>
+
+      <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    </nav>
   </div>
+</header>
 
-  <!-- Текст и кнопка ПОД изображением -->
-  <section class="hero-section">
+<main id="content">
+  <section class="hero">
     <div class="container">
-      <div class="hero-text">
-        <h1>Продающий Telegram-бот и лендинг — за 50 000 ₽</h1>
-        <p>Готовая система привлечения и обработки клиентов без вашего участия. Верстаю, настраиваю, запускаю — вы просто получаете заявки.</p>
-        <a href="https://t.me/ваш_бот?start=landing" class="btn">Начать прямо сейчас</a>
+      <div class="heroGrid">
+        <div class="card heroCard">
+          <div class="kicker">Mobile-first • быстро • без лишнего</div>
+          <h1>Заявки в Telegram — без ручной переписки и “пропавших” клиентов</h1>
+          <p class="lead">
+            Делаем продающий сайт + Telegram-бот, который объясняет ценность за 5–7 секунд,
+            отсекает нецелевых и приводит клиента к диалогу.
+          </p>
+          <div class="heroActions">
+            <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+            <a class="btn" href="how.html">Как это работает</a>
+          </div>
+          <div class="badges" aria-label="Ключевые обещания">
+            <div class="badge">Без созвонов</div>
+            <div class="badge">Без форм</div>
+            <div class="badge">Один путь → Telegram</div>
+            <div class="badge">Быстрая загрузка</div>
+          </div>
+        </div>
+
+        <aside class="card heroCard">
+          <h2 style="margin:0 0 10px;">Кому подходит</h2>
+          <div class="grid">
+            <div class="item card">
+              <h3>Предпринимателям</h3>
+              <p>Нужны заявки стабильно, а не рывками.</p>
+            </div>
+            <div class="item card">
+              <h3>Экспертам и коучам</h3>
+              <p>Сложно быстро донести ценность — клиент “сливается”.</p>
+            </div>
+            <div class="item card">
+              <h3>Онлайн‑школам</h3>
+              <p>Много входящих, много рутины, низкая доходимость.</p>
+            </div>
+            <div class="item card">
+              <h3>Услугам / digital</h3>
+              <p>Хочется автоматизировать первичную квалификацию.</p>
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
 
-  <!-- Для кого это -->
-  <section class="section-for-whom">
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">Для кого это</h2>
-      <p class="section-lead">
-        Вы — предприниматель, коуч, консультант или владелец продукта, и вы:
-      </p>
+      <h2>Что вы получаете</h2>
+      <p>Собранный “продающий комплект”, заточенный под Telegram как единственную цель.</p>
       <div class="grid">
-        <div class="card">
-          <h3>Тратите время на ответы</h3>
-          <p>Каждый день — одни и те же вопросы в Telegram или WhatsApp.</p>
+        <div class="item card">
+          <h3>Лендинг (5 страниц)</h3>
+          <p>Понятная структура, быстрые ответы на возражения, CTA каждые 1–1.5 экрана.</p>
         </div>
-        <div class="card">
-          <h3>Не получаете заявки ночью</h3>
-          <p>Потенциальные клиенты уходят, потому что вы не ответили сразу.</p>
+        <div class="item card">
+          <h3>Telegram-бот</h3>
+          <p>Первичная квалификация, сбор контекста, перевод в диалог по делу.</p>
         </div>
-        <div class="card">
-          <h3>Хотите автоматизировать первичный контакт</h3>
-          <p>Без CRM, без программистов — просто рабочий инструмент.</p>
+        <div class="item card">
+          <h3>Фильтрация нецелевых</h3>
+          <p>Меньше пустых переписок → больше энергии на тех, кто готов покупать.</p>
+        </div>
+        <div class="item card">
+          <h3>Автоматизация 24/7</h3>
+          <p>Пока вы заняты — система продолжает принимать и прогревать заявки.</p>
+        </div>
+      </div>
+      <hr class="hr">
+      <div style="margin-top:14px">
+        <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Как это работает (очень просто)</h2>
+      <p>Без сложных сервисов. Всё происходит в Telegram.</p>
+      <div class="grid steps">
+        <div class="step card">
+          <h3>Переход в бот</h3>
+          <p>Пользователь нажимает CTA и сразу попадает в Telegram-бота.</p>
+        </div>
+        <div class="step card">
+          <h3>Короткая “регистрация”</h3>
+          <p>Пара вопросов — чтобы понять запрос и отсечь нецелевых.</p>
+        </div>
+        <div class="step card">
+          <h3>Настройка системы</h3>
+          <p>Под ваш продукт: структура, тексты, логика, триггеры доверия.</p>
+        </div>
+        <div class="step card">
+          <h3>Заявки и диалоги</h3>
+          <p>Вы получаете обращения с контекстом, без сотни уточнений.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Что вы получите -->
-  <section class="section-what-you-get">
+  <!-- Подробные отзывы -->
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">Что вы получите</h2>
+      <h2>Подробные отзывы клиентов</h2>
+      <p>Реальные кейсы: до/после, результаты, честные впечатления.</p>
       <div class="grid">
-        <div class="card">
-          <h3>Продающий лендинг</h3>
-          <p>5 страниц: главная, как это работает, условия, FAQ, политика. Адаптивный, быстрый, без CMS.</p>
+        <div class="quote card">
+          <strong>«За 2 недели — 18 заявок, из них 5 продаж»</strong>
+          <p>Раньше тратил часы на переписку с теми, кто просто «посмотреть». Теперь бот сразу спрашивает бюджет и цель — и только мотивированные доходят до меня. Лендинг работает даже ночью.</p>
+          <div class="meta">Анна, коуч по продуктивности</div>
+          <a class="review-link" href="https://t.me/..." target="_blank" rel="noopener">→ Посмотреть отзыв</a>
         </div>
-        <div class="card">
-          <h3>Telegram-бот для заявок</h3>
-          <p>Собирает имя, контакт и задачу — и сразу отправляет вам в Telegram.</p>
+        <div class="quote card">
+          <strong>«Сэкономили 12 часов в неделю на поддержке»</strong>
+          <p>Онлайн-курс по дизайну. Бот теперь собирает все данные: уровень, цели, даже скриншоты работ. Менеджер включается только на этапе оплаты. Конверсия выросла на 37%.</p>
+          <div class="meta">Команда SchoolUI</div>
+          <a class="review-link" href="https://youtu.be/..." target="_blank" rel="noopener">→ Видеоотзыв</a>
         </div>
-        <div class="card">
-          <h3>Запуск и поддержка</h3>
-          <p>Размещаю на сервере, настраиваю 24/7 работу, 30 дней поддержки бесплатно.</p>
+        <div class="quote card">
+          <strong>«Запустили без единого созвона»</strong>
+          <p>Сначала сомневался — как можно без звонков? Но всё было через Notion: бриф, правки, финальная сборка. Через 4 дня — лендинг + бот в работе. Первую заявку получили в тот же день.</p>
+          <div class="meta">Максим, SMM-специалист</div>
+          <a class="review-link" href="https://t.me/..." target="_blank" rel="noopener">→ Читать в Telegram</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Условия -->
-  <section class="section-pricing">
-    <div class="container">
-      <h2 class="section-title">Условия</h2>
-      <div class="pricing-grid">
-        <div class="plan">
-          <h3>Всё сразу.<br>Предоплата</h3>
-          <div class="price">25 000 ₽</div>
-          <p>Фиксированная стоимость. Срок — 10–15 дней. Оплата после тестового запуска.</p>
-        </div>
-        <div class="plan">
-          <h3>Без вложений</h3>
-          <div class="price">10% с продаж</div>
-          <p>Минимум 3 месяца. Подходит, если у вас уже есть трафик.</p>
-        </div>
-      </div>
-      <p class="center-note">
-        Вы выбираете — до старта работ.
-      </p>
-    </div>
-  </section>
-
-  <!-- Как это работает -->
-  <section class="section-how-it-works">
-    <div class="container">
-      <h2 class="section-title">Как это работает</h2>
-      <ol class="steps-list">
-        <li>Вы оставляете заявку в <a href="https://t.me/ваш_бот">моём боте</a></li>
-        <li>Мы обсуждаем вашу нишу, задачи и контент</li>
-        <li>Я верстаю лендинг и настраиваю бота</li>
-        <li>Вы тестируете — всё работает</li>
-        <li>Я запускаю систему — вы получаете заявки</li>
-      </ol>
-      <p class="center-note">
-        Никаких технических знаний не нужно.
-      </p>
-    </div>
-  </section>
-
-  <!-- Довольные клиенты -->
-  <section class="section-testimonials">
-    <div class="container">
-      <h2 class="section-title">Нас уже десятки</h2>
-      <div class="testimonials-slider">
-        <div class="testimonial-card">
-          <img src="img/client1.jpg" alt="Анна, коуч" class="client-photo">
-          <p>«Заказала лендинг и бота — всё заработало за 3 дня. Теперь получаю заявки даже ночью!»</p>
-          <div class="client-name">Анна, коуч</div>
-        </div>
-        <div class="testimonial-card">
-          <img src="img/client2.jpg" alt="Максим, фитнес-тренер" class="client-photo">
-          <p>«Раньше тратил часы на ответы. Теперь бот всё собирает — я только звоню и продаю.»</p>
-          <div class="client-name">Максим, фитнес-тренер</div>
-        </div>
-        <div class="testimonial-card">
-          <img src="img/client3.jpg" alt="Елена, онлайн-школа" class="client-photo">
-          <p>«Отличная работа! Бот работает как часы, а лендинг выглядит дорого. Спасибо!»</p>
-          <div class="client-name">Елена, онлайн-школа</div>
-        </div>
-        <div class="testimonial-card">
-          <img src="img/client4.jpg" alt="Дмитрий, маркетолог" class="client-photo">
-          <p>«50 000 ₽ — лучшая инвестиция. За первый месяц отбил всё и получил 5 клиентов.»</p>
-          <div class="client-name">Дмитрий, маркетолог</div>
+        <div class="quote card">
+          <strong>«Теперь не теряю “горячих” клиентов»</strong>
+          <p>Раньше люди просто пропадали после формы. Сейчас CTA ведёт сразу в Telegram — и там бот их не отпускает. За месяц +22% к продажам.</p>
+          <div class="meta">Дарья, нутрициолог</div>
+          <a class="review-link" href="https://instagram.com/..." target="_blank" rel="noopener">→ Отзыв в stories</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Финальный CTA -->
-  <section class="section-final-cta">
+  <!-- Короткие отзывы -->
+  <section class="section">
     <div class="container">
-      <h2>Готовы автоматизировать привлечение?</h2>
-      <p>Переходите в Telegram — и получите первую заявку уже завтра.</p>
-      <a href="https://t.me/ваш_бот?start=landing" class="btn">Создать бота и лендинг</a>
-      <p class="footer-note">
-        Работаю только с легальными нишами. Не делаю казино, adult, финансовые пирамиды.<br>
-        Максимум 5 проектов одновременно — чтобы гарантировать качество.
-      </p>
+      <h2>Короткие отзывы</h2>
+      <p>Формат: результат → польза (без “красивых слов”).</p>
+      <div class="grid">
+        <div class="quote card">
+          <strong>“Заявки стали понятнее.”</strong>
+          <p>Раньше 70% диалогов — ни о чём. Теперь приходят с запросом и бюджетом.</p>
+          <div class="meta">Эксперт, услуги</div>
+        </div>
+        <div class="quote card">
+          <strong>“Сократили рутину.”</strong>
+          <p>Бот снял первичные вопросы — менеджер подключается только на тёплых.</p>
+          <div class="meta">Онлайн‑школа</div>
+        </div>
+        <div class="quote card">
+          <strong>“Конверсия в диалог выросла.”</strong>
+          <p>Лендинг быстро объясняет ценность, и человек сам идёт в Telegram.</p>
+          <div class="meta">Предприниматель</div>
+        </div>
+        <div class="quote card">
+          <strong>“Запуск без созвонов.”</strong>
+          <p>Всё сделали асинхронно: материалы → сборка → запуск.</p>
+          <div class="meta">Консалтинг</div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="site-footer">
+  <section class="section">
     <div class="container">
-      <p>© 2026 Бот + Лендинг. Все права защищены.</p>
+      <div class="callout">
+        <h3>Готовы запустить? Беру ограниченное число проектов.</h3>
+        <ul>
+          <li>Если вы хотите “просто сайт” — это не сюда.</li>
+          <li>Если цель — заявки и автоматизация в Telegram — идём дальше.</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+          <a class="btn" href="terms.html">Посмотреть условия</a>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footerGrid">
+      <div class="small">© <span id="y"></span> Лендинг + TG-бот. Все права защищены.</div>
+      <div class="small">
+        <a href="faq.html">FAQ</a> · <a href="privacy.html">Политика</a>
+      </div>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</footer>
+
+<div class="stickyCta" role="region" aria-label="Быстрый переход в Telegram">
+  <div class="stickyInner">
+    <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    <button class="btn btn--ghost" data-sticky-close type="button" aria-label="Скрыть панель">
+      ✕
+    </button>
+  </div>
+</div>
 
 </body>
 </html>
