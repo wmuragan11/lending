@@ -1,115 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Условия — Бот + Лендинг</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Условия и формат — лендинг + Telegram-бот</title>
+  <meta name="description" content="Форматы: фикс или процент. Что входит: разработка, запуск, поддержка. Ограничения: легальные ниши, ограниченное число проектов." />
+  <meta property="og:title" content="Условия и формат" />
+  <meta property="og:description" content="Прозрачно: что входит, сроки, ограничения. Дальше — в Telegram-боте." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
+<a class="skip" href="#content">Перейти к содержимому</a>
 
-  <!-- Верхнее прилипающее меню -->
-  <header>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">Бот + Лендинг</div>
-        <div class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="how.html">Как это работает</a>
-          <a href="terms.html">Условия</a>
-          <a href="faq.html">FAQ</a>
-          <a href="privacy.html">Политика</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div><strong>Лендинг + TG-бот</strong><span>условия</span></div>
+      </a>
 
-  <!-- Основной контент -->
-  <main class="terms-page">
-    <div class="container">
-      <div class="page-header">
-        <h1 class="page-title">Условия работы</h1>
-        <p class="page-lead">Выберите удобный формат сотрудничества.</p>
+      <div class="menu">
+        <a href="how.html">Как работает</a>
+        <a href="terms.html" aria-current="page">Условия</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Политика</a>
       </div>
 
-      <!-- Форматы оплаты -->
-      <section class="terms-section">
-        <h2>Форматы оплаты</h2>
-        <div class="pricing-grid">
-          <!-- Вариант 1: Полная разработка -->
-          <div class="plan">
-            <h3>Под ключ</h3>
-            <div class="price">50 000 ₽</div>
-            <p>Разработка лендинга и бота «под ключ».</p>
-            <ul class="plan-features">
-              <li>Предоплата: 25 000 ₽</li>
-              <li>Окончательный платёж: 25 000 ₽</li>
-              <li>Срок: 10–15 дней</li>
-              <li>Поддержка: 30 дней бесплатно</li>
-            </ul>
-          </div>
+      <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    </nav>
+  </div>
+</header>
 
-          <!-- Вариант 2: Абонентская плата -->
-          <div class="plan">
-            <h3>Абонентская модель</h3>
-            <div class="price">5 000 ₽ / мес</div>
-            <p>Ежемесячная плата за хостинг и поддержку.</p>
-            <ul class="plan-features">
-              <li>Бессрочное использование</li>
-              <li>Техническая поддержка</li>
-              <li>Обновления и исправления</li>
-              <li>Круглосуточная работа системы</li>
-            </ul>
-          </div>
+<main id="content">
+  <section class="hero">
+    <div class="container">
+      <div class="card heroCard">
+        <div class="kicker">Прозрачно и по делу</div>
+        <h1>Формат работы и условия</h1>
+        <p class="lead">Два формата: фиксированная оплата или процент с результата. Выбираем то, что честнее под вашу модель.</p>
+        <div class="heroActions">
+          <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+          <a class="btn" href="how.html">Сначала — как это работает</a>
         </div>
-        <p class="center-note" style="margin-top: 20px;">
-          Вы можете начать с полной разработки, а затем перейти на абонентскую оплату.
-        </p>
-      </section>
-
-      <!-- Что входит -->
-      <section class="terms-section">
-        <h2>Что входит в проект</h2>
-        <ul class="terms-list">
-          <li>Многостраничный лендинг (5 страниц: главная, как работает, условия, FAQ, политика)</li>
-          <li>Адаптивная верстка под все устройства</li>
-          <li>Telegram-бот: сбор заявок, валидация контактов, отправка в ваш админ-чат</li>
-          <li>Размещение на сервере с 24/7 доступностью</li>
-          <li>Инструкция по управлению</li>
-        </ul>
-      </section>
-
-      <!-- Ограничения -->
-      <section class="terms-section">
-        <h2>Ограничения</h2>
-        <ul class="terms-list">
-          <li>Не работаю с нишами: казино, adult, финансовые пирамиды, нелегальные товары</li>
-          <li>Максимум 5 проектов одновременно</li>
-          <li>Исполнитель оставляет за собой право отказать без объяснения причин</li>
-          <li>Контент (тексты, фото) предоставляет заказчик</li>
-        </ul>
-      </section>
-
-      <!-- Принцип -->
-      <section class="note-box">
-        <p>💼 Первый вариант — для тех, кто хочет получить систему быстро и навсегда.<br>
-        Второй — для тех, кто ценит стабильность и готов платить за надёжность.</p>
-      </section>
-
-      <!-- CTA -->
-      <div class="cta-section">
-        <p>Какой формат вам подходит?</p>
-        <a href="https://t.me/ваш_бот?start=terms" class="btn">Обсудить в Telegram</a>
       </div>
     </div>
-  </main>
+  </section>
 
-  <footer class="site-footer">
+  <section class="section">
     <div class="container">
-      <p>© 2026 Бот + Лендинг. Все права защищены.</p>
+      <h2>Форматы сотрудничества</h2>
+      <div class="grid">
+        <div class="item card">
+          <h3>Фиксированная оплата</h3>
+          <p>Подходит, если нужен быстрый запуск и понятный бюджет. Объём фиксируем заранее.</p>
+        </div>
+        <div class="item card">
+          <h3>Процент с продаж</h3>
+          <p>Подходит, если вы готовы играть в результат и хотите выстроить долгую систему.</p>
+        </div>
+      </div>
+      <div style="margin-top:14px">
+        <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Выбрать формат в боте</a>
+      </div>
     </div>
-  </footer>
+  </section>
 
+  <section class="section">
+    <div class="container">
+      <h2>Что входит</h2>
+      <div class="grid">
+        <div class="item card">
+          <h3>Разработка</h3>
+          <p>Структура страниц, тексты, вёрстка, связка с Telegram.</p>
+        </div>
+        <div class="item card">
+          <h3>Запуск</h3>
+          <p>Проверка на мобильных, базовая SEO-настройка, публикация статикой.</p>
+        </div>
+        <div class="item card">
+          <h3>Поддержка</h3>
+          <p>Правки по факту трафика, ответы по процессу, улучшения “без раздувания”.</p>
+        </div>
+        <div class="item card">
+          <h3>Фокус на конверсии</h3>
+          <p>Убираем лишнее, усиливаем доверие, ведём к одному действию.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Сроки и этапы</h2>
+      <div class="grid">
+        <div class="item card">
+          <h3>Срок</h3>
+          <p>Обычно 3–10 дней в зависимости от готовности материалов и согласований.</p>
+        </div>
+        <div class="item card">
+          <h3>Этапы</h3>
+          <p>Бриф → структура → тексты → вёрстка → проверка → запуск.</p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:12px">
+        <h3>Ограничения</h3>
+        <ul>
+          <li>Только легальные ниши.</li>
+          <li>Ограниченное число проектов одновременно (качество важнее объёма).</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footerGrid">
+      <div class="small">© <span id="y"></span> Лендинг + TG-бот.</div>
+      <div class="small"><a href="privacy.html">Политика</a></div>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</footer>
+
+<div class="stickyCta" role="region" aria-label="Быстрый переход в Telegram">
+  <div class="stickyInner">
+    <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    <button class="btn btn--ghost" data-sticky-close type="button" aria-label="Скрыть панель">✕</button>
+  </div>
+</div>
 </body>
 </html>
