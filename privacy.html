@@ -1,86 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Политика конфиденциальности — Бот + Лендинг</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Политика конфиденциальности</title>
+  <meta name="description" content="Какие данные собираются, зачем, как хранятся и как связаться. Минимальный сбор данных: сайт ведёт в Telegram." />
+  <meta property="og:title" content="Политика конфиденциальности" />
+  <meta property="og:description" content="Прозрачно: что собираем и зачем." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
+<a class="skip" href="#content">Перейти к содержимому</a>
 
-  <!-- Верхнее прилипающее меню -->
-  <header>
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div><strong>Лендинг + TG-бот</strong><span>политика</span></div>
+      </a>
+
+      <div class="menu">
+        <a href="how.html">Как работает</a>
+        <a href="terms.html">Условия</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html" aria-current="page">Политика</a>
+      </div>
+
+      <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <section class="hero">
     <div class="container">
-      <nav class="navbar">
-        <div class="logo">Бот + Лендинг</div>
-        <div class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="how.html">Как это работает</a>
-          <a href="terms.html">Условия</a>
-          <a href="faq.html">FAQ</a>
-          <a href="privacy.html">Политика</a>
+      <div class="card heroCard">
+        <div class="kicker">Юридическая база и доверие</div>
+        <h1>Политика конфиденциальности</h1>
+        <p class="lead">
+          Сайт не содержит форм и не собирает персональные данные. Всё взаимодействие начинается в Telegram-боте — только с вашего согласия.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card heroCard">
+        <h2>1. Данные, собираемые на сайте</h2>
+        <p>
+          При посещении сайта могут технически фиксироваться: IP-адрес, тип устройства и браузера, язык, посещённые страницы,
+          действия (например, клики по кнопкам) и UTM-метки. Эти данные анонимны и не идентифицируют вас лично.
+        </p>
+
+        <h2 style="margin-top:16px;">2. Зачем это нужно</h2>
+        <p>
+          Информация используется для анализа трафика, улучшения скорости и конверсии сайта, а также оценки эффективности рекламных кампаний.
+        </p>
+
+        <h2 style="margin-top:16px;">3. Данные, собираемые в Telegram-боте</h2>
+        <p>
+          После перехода в бота вы можете по желанию предоставить:
+          <ul style="margin:8px 0 8px 20px;">
+            <li>Имя</li>
+            <li>Цель обращения</li>
+            <li>Email и/или номер телефона</li>
+          </ul>
+          Эти данные собираются **только с вашего согласия** и используются исключительно для настройки услуги и обратной связи.
+        </p>
+
+        <h2 style="margin-top:16px;">4. Хранение и защита</h2>
+        <p>
+          Сайт не хранит персональные данные — форм нет. Данные, введённые в Telegram-боте, хранятся в рамках Telegram
+          и защищаются его политикой конфиденциальности. Мы не передаём их третьим лицам.
+        </p>
+
+        <h2 style="margin-top:16px;">5. Контакты</h2>
+        <p>
+          Вопросы по конфиденциальности можно задать через Telegram-бота — он соберёт запрос и передаст корректно.
+          Альтернативный способ: email <span class="badge">privacy@example.com</span> (замените на ваш).
+        </p>
+
+        <div style="margin-top:14px">
+          <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
         </div>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Основной контент -->
-  <main class="page-content">
-    <div class="container">
-      <div class="page-header">
-        <h1 class="page-title">Политика конфиденциальности</h1>
-        <p class="page-lead">Как мы собираем, используем и защищаем ваши данные.</p>
-      </div>
-
-      <div class="privacy-content content-section">
-        <p><strong>1. Общие положения</strong><br>
-        Настоящая политика описывает, как мы обрабатываем персональные данные, предоставленные вами при использовании нашего Telegram-бота и лендинга.</p>
-
-        <p><strong>2. Какие данные мы собираем</strong><br>
-        При регистрации в боте вы предоставляете добровольно:
-        <ul class="terms-list">
-          <li>Имя</li>
-          <li>Telegram-никнейм или ID</li>
-          <li>Контактный телефон и/или email</li>
-          <li>Описание вашей задачи или «боли»</li>
-        </ul>
+        <p class="small" style="margin-top:12px;">
+          Обновлено: <span id="d"></span>
         </p>
-
-        <p><strong>3. Цель обработки данных</strong><br>
-        Ваши данные используются исключительно для:
-        <ul class="terms-list">
-          <li>Связи с вами по вопросам проекта</li>
-          <li>Настройки лендинга и бота под вашу нишу</li>
-          <li>Оказания услуги по договору</li>
-        </ul>
-        </p>
-
-        <p><strong>4. Передача третьим лицам</strong><br>
-        Ваши данные <strong>не продаются и не передаются</strong> третьим лицам. Исключение — технические подрядчики (хостинг, сервер), которые также обязаны соблюдать конфиденциальность.</p>
-
-        <p><strong>5. Хранение данных</strong><br>
-        Данные хранятся до окончания сотрудничества + 30 дней. По вашему запросу — удаляются полностью.</p>
-
-        <p><strong>6. Согласие</strong><br>
-        Используя наш Telegram-бот, вы автоматически соглашаетесь с условиями данной политики.</p>
-
-        <p><strong>7. Изменения</strong><br>
-        Мы оставляем за собой право обновлять эту политику. Актуальная версия всегда доступна по ссылке: <code>/privacy</code>.</p>
-      </div>
-
-      <div class="cta-section">
-        <p>Вопросы по защите данных?</p>
-        <a href="https://t.me/ваш_бот?start=privacy" class="btn">Написать в Telegram</a>
       </div>
     </div>
-  </main>
+  </section>
+</main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Бот + Лендинг. Все права защищены.</p>
+<footer class="footer">
+  <div class="container">
+    <div class="footerGrid">
+      <div class="small">© <span id="y"></span> Лендинг + TG-бот.</div>
+      <div class="small"><a href="faq.html">FAQ</a></div>
     </div>
-  </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('d').textContent = new Date().toLocaleDateString('ru-RU');
+  </script>
+</footer>
 
+<div class="stickyCta" role="region" aria-label="Быстрый переход в Telegram">
+  <div class="stickyInner">
+    <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    <button class="btn btn--ghost" data-sticky-close type="button" aria-label="Скрыть панель">✕</button>
+  </div>
+</div>
 </body>
 </html>
