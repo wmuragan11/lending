@@ -1,77 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FAQ — Бот + Лендинг</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — лендинг + Telegram-бот</title>
+  <meta name="description" content="Ответы на частые вопросы: сроки запуска, нужны ли технические знания, что если не понравится, работает ли с телефона, что входит в поддержку." />
+  <meta property="og:title" content="FAQ" />
+  <meta property="og:description" content="Коротко и уверенно: как устроен запуск и что вы получите." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/app.js"></script>
 </head>
 <body>
+<a class="skip" href="#content">Перейти к содержимому</a>
 
-  <!-- Верхнее прилипающее меню -->
-  <header>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo">Бот + Лендинг</div>
-        <div class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="how.html">Как это работает</a>
-          <a href="terms.html">Условия</a>
-          <a href="faq.html">FAQ</a>
-          <a href="privacy.html">Политика</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"></div>
+        <div><strong>Лендинг + TG-бот</strong><span>FAQ</span></div>
+      </a>
 
-  <!-- Основной контент -->
-  <main class="page-content">
-    <div class="container">
-      <div class="page-header">
-        <h1 class="page-title">Частые вопросы</h1>
-        <p class="page-lead">Ответы на вопросы, которые чаще всего задают клиенты.</p>
+      <div class="menu">
+        <a href="how.html">Как работает</a>
+        <a href="terms.html">Условия</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="privacy.html">Политика</a>
       </div>
 
-      <div class="faq-list">
-        <div class="faq-item">
-          <h3>Сколько времени занимает разработка?</h3>
-          <p>От 10 до 15 дней — в зависимости от сложности и оперативности согласования контента.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Что, если мне не понравится результат?</h3>
-          <p>Вы тестируете проект до финальной оплаты. Если что-то не так — вношу правки бесплатно.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Могу ли я получить исходники?</h3>
-          <p>Да, после полной оплаты вы получаете все файлы лендинга и код бота (по запросу).</p>
-        </div>
-        <div class="faq-item">
-          <h3>Что входит в абонентскую плату 5 000 ₽/мес?</h3>
-          <p>Хостинг, 24/7 доступность, техническая поддержка, исправление багов и мелкие доработки.</p>
-        </div>
-        <div class="faq-item">
-          <h3>А если я перестану платить за абонентку?</h3>
-          <p>Система будет остановлена. При возобновлении оплаты — запущу её обратно без потерь.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Работаете с моей нишей?</h3>
-          <p>Работаю с коучами, консультантами, онлайн-школами, e-commerce, услугами. Не работаю с казино, adult, пирамидами и нелегальными товарами.</p>
-        </div>
-      </div>
+      <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="cta-section">
-        <p>Остались вопросы?</p>
-        <a href="https://t.me/ваш_бот?start=faq" class="btn">Написать в Telegram</a>
-      </div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
+<main id="content">
+  <section class="hero">
     <div class="container">
-      <p>© 2026 Бот + Лендинг. Все права защищены.</p>
+      <div class="card heroCard">
+        <div class="kicker">Возражения закрываем здесь</div>
+        <h1>FAQ — коротко и по делу</h1>
+        <p class="lead">Если остались вопросы — бот сам соберёт контекст и покажет, как всё устроено.</p>
+        <div class="heroActions">
+          <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+          <a class="btn" href="terms.html">Посмотреть условия</a>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
 
+  <section class="section">
+    <div class="container">
+      <h2>Частые вопросы</h2>
+
+      <details>
+        <summary>Сколько времени занимает запуск?</summary>
+        <p>Обычно от 3 до 10 дней. Чем быстрее вы дадите вводные — тем быстрее запуск.</p>
+      </details>
+
+      <details>
+        <summary>Нужны ли технические знания?</summary>
+        <p>Нет. Вам не нужно разбираться в коде. Вся логика для клиента — внутри Telegram-бота.</p>
+      </details>
+
+      <details>
+        <summary>Что если не понравится результат?</summary>
+        <p>Правим по фактам: структура, тексты, блоки, CTA. Цель — конверсия в Telegram, а не “красота”.</p>
+      </details>
+
+      <details>
+        <summary>Работает ли с телефона?</summary>
+        <p>Да. Проект изначально mobile-first: крупные заголовки, короткие блоки, липкий CTA.</p>
+      </details>
+
+      <details>
+        <summary>Что входит в поддержку?</summary>
+        <p>Точечные улучшения после запуска: правки текста/блоков, усиление CTA, корректировки по трафику.</p>
+      </details>
+
+      <div style="margin-top:14px">
+        <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footerGrid">
+      <div class="small">© <span id="y"></span> Лендинг + TG-бот.</div>
+      <div class="small"><a href="privacy.html">Политика</a></div>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</footer>
+
+<div class="stickyCta" role="region" aria-label="Быстрый переход в Telegram">
+  <div class="stickyInner">
+    <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
+    <button class="btn btn--ghost" data-sticky-close type="button" aria-label="Скрыть панель">✕</button>
+  </div>
+</div>
 </body>
 </html>
