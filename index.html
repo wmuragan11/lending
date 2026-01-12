@@ -19,19 +19,6 @@
 <body>
 <a class="skip" href="#content">Перейти к содержимому</a>
 
-<!-- Мобильное модальное меню (в самом начале body) -->
-<div class="mobile-modal" id="mobileMenu" aria-hidden="true">
-  <div class="mobile-modal-content">
-    <button class="mobile-modal-close" aria-label="Закрыть меню">&times;</button>
-    <nav>
-      <a href="how.html">Как работает</a>
-      <a href="terms.html">Условия</a>
-      <a href="faq.html">FAQ</a>
-      <a href="privacy.html">Политика</a>
-    </nav>
-  </div>
-</div>
-
 <header class="header">
   <div class="container">
     <nav class="nav" aria-label="Основная навигация">
@@ -43,10 +30,22 @@
         </div>
       </a>
 
-      <!-- Кнопка "Меню" только на мобильных -->
-      <button class="mobile-menu-btn" id="openMobileMenu" aria-label="Открыть меню">Меню</button>
+      <!-- Мобильное меню-гамбургер -->
+      <button class="mobile-menu-toggle" aria-label="Меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <!-- Десктопное меню + кнопка -->
+      <!-- Мобильная панель: ТОЛЬКО ССЫЛКИ, БЕЗ КНОПКИ -->
+      <div class="mobile-menu" aria-hidden="true">
+        <a href="how.html">Как работает</a>
+        <a href="terms.html">Условия</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Политика</a>
+      </div>
+
+      <!-- Десктоп: меню + кнопка -->
       <div class="desktop-menu">
         <div class="menu" role="navigation">
           <a href="how.html">Как работает</a>
@@ -60,10 +59,7 @@
   </div>
 </header>
 
-<!-- ОСТАЛЬНОЙ КОНТЕНТ БЕЗ ИЗМЕНЕНИЙ -->
 <main id="content">
-  <!-- ... ваш контент ... -->
-  <!-- (оставьте всё как есть до footer) -->
   <section class="hero">
     <div class="container">
       <div class="heroGrid">
@@ -258,6 +254,7 @@
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </footer>
 
+<!-- Липкая кнопка ТОЛЬКО для мобильных -->
 <div class="stickyCta" role="region" aria-label="Перейти в бота">
   <div class="stickyInner">
     <a class="btn btn--cta" data-tg href="https://t.me/ваш_бот">Перейти в бота</a>
